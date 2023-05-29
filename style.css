@@ -1,0 +1,461 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #FAEDCD;
+    font-family: 'Raleway', sans-serif;
+}
+h2{
+    font-family: 'Dancing Script', cursive;
+}
+#hero{
+    background: linear-gradient(270deg, #7f846e, #faedcd);
+    background-size: 400% 400%;
+    -webkit-animation: AnimationName 30s ease infinite;
+    -moz-animation: AnimationName 30s ease infinite;
+    -o-animation: AnimationName 30s ease infinite;
+    animation: AnimationName 30s ease infinite;
+}
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-o-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+#grid-container-hero{
+    display: grid;
+    grid-template-rows:repeat(4,0.5fr);
+    grid-template-columns:repeat(12,1fr);
+}
+header{
+    grid-column: span 12;
+}
+/*header design starts*/
+nav{
+    padding-top: 1.8rem;
+    padding-bottom: 0rem;
+    margin-bottom: 0;
+    display: grid;
+    grid-template-columns:repeat(12,1fr);
+}
+.header-logo{
+    grid-column: span 2;
+    display: flex;
+    column-gap: 1.2rem;
+    align-items: center;
+}
+.linkedin{
+    height: 1.5rem;
+    padding-left: 1rem;
+}
+.github{
+    height: 1.5rem;
+}
+.header-span{
+    grid-column: span 7;
+}
+.nav-links{
+    grid-column: span 3;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    column-gap: 1.2rem;
+}
+.link-heads{
+    color: #3f4237;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+.link-heads:hover{
+    color: #353b25;
+    font-size: 1.2rem;
+}
+.Projects{
+    padding-right: 1.2rem;
+}
+
+/*************************/
+/*profile image*/
+.profilepic{
+    grid-column: span 12;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.profilepic>img{
+    height: 12rem;
+    width: 12rem;
+    border-radius: 50%;
+}
+/*********************/
+/*intro design starts*/
+.about{
+    grid-column: span 12;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+h1{
+    font-size: 2.8rem;
+    margin-bottom: 0;
+    color: #353b25;
+    font-family: 'Cinzel Decorative', cursive;
+}
+p{
+    padding: 0;
+    margin: 0;
+    font-size: 1.2rem;
+    color: #3f4237;
+    font-family: 'Dancing Script', cursive;
+}
+/**********************************/
+/*buttons*/
+.hero-button{
+    padding: 0.8rem;
+    margin: 0.5rem;
+    border:1px solid #7f846e;
+    border-radius: 0%;
+    background-color: #FAEDCD;
+    color: #3f4237;
+    position: relative;
+    text-align: center;
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+    font-family: 'Raleway', sans-serif;
+}
+.hero-button:hover{
+    background-color: #7f846e;
+    color: #FAEDCD;
+}
+.hero-button:after {
+    content: "";
+    background: salmon;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px !important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+  }
+  
+.hero-button:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+  }
+.buttons{
+    grid-column: span 12;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/******************************/
+
+/*education section*/
+#container-edu{
+    text-align: center;
+}
+#container-edu ol{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10rem;
+    padding-bottom: 1.2rem;
+    margin-bottom: 0;
+
+}
+@media (max-width: 992px){
+    #container-edu ol{
+        display: flex;
+        flex-direction: column;
+        row-gap: 1.2rem;
+    }
+}
+.deg-list>li{
+    padding-bottom: 1.5rem;
+    font-size: 1.5rem;
+    color: #353b25;
+    font-family: 'Cinzel Decorative', cursive;
+}
+#container-edu h2{
+    font-size: 2.5rem;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-top: 1.2rem;
+    padding-bottom: 1rem;
+    letter-spacing: 0.1rem;
+    color: #353b25;
+}
+.deg-sub-list{
+    padding: 0;
+    list-style: none;
+    font-size: 1rem;
+    color: #7f846e;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 200;
+    padding-top: 0.2rem;
+}
+/*********not satisfied with h2 and ol alignment**********************/
+
+/*Skills section*/
+#container-skills{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #FAEDCD;
+}
+.card-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    height: 30vh;
+    width: 40vh;
+    padding: 1.5rem 0;
+    margin: 1.2rem;
+    background-color: cornsilk;
+    background-image: linear-gradient(#FAEDCD ,#FEFAE0);
+    border-radius: 0%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: center;
+
+}
+.card:hover{
+    background-image: linear-gradient(#FEFAE0,#FAEDCD);
+}
+#container-skills>h2{
+    font-size: 2.5rem;
+    margin-bottom: 0;
+    color: #353b25;
+}
+.card ul{
+    padding: 0;
+    list-style: none;
+    font-size: 1.2rem;
+    margin: 0;
+}
+.card h3{
+    font-size: 1.5rem;
+    color: #353b25;
+    font-family: 'Cinzel Decorative', cursive;
+    line-height: 0.9;
+    font-weight: 200;
+}
+.card li{
+    padding: 0.1rem;
+    font-size: 1rem;
+    color: #7f846e;
+}
+
+/************************************/
+
+/*Projects*/
+#project-main-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#project-main-container h2{
+    font-size: 2.5rem;
+    padding-bottom: 0;
+    margin-bottom:0.5rem;
+    color: #353b25;
+}
+#project-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 2rem;
+    margin-top: 1.2rem;
+    width: 80%;
+    gap: 10%;
+    flex-wrap: wrap;
+}
+.project-list-item h3{
+    font-size: 1.5rem;
+    margin-bottom: 0;
+    color: #353b25;
+    font-family: 'Cinzel Decorative', cursive;
+    font-weight: 200;
+}
+details{
+    padding-top: 0.5rem;
+    font-size: 1.2em;
+    font-weight: 500;
+    color: #7f846e;
+    font-family: 'Dancing Script', cursive;
+}
+details:hover{
+    color: #3f4237;
+}
+.project-list-item p{
+    padding-bottom: 1.5rem;
+    color: #3f4237;
+    font-family: 'Raleway', sans-serif;
+    font-size: 0.9rem;
+    line-height: 150%;
+}
+.project-btn{
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.project-btn>button{
+    padding: 0.8rem 1rem;
+    margin-right: 1rem;
+    border: 0.5px solid #353b25;
+    background-color: #FAEDCD;
+    color:#353b25;
+    letter-spacing: 0.1rem;
+    margin-bottom: 1.5rem;
+    position: relative;
+    text-align: center;
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+    font-family: 'Raleway', sans-serif;
+}
+.project-btn>button:after {
+    content: "";
+    background: #7f846e;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px !important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+  }
+  
+  .project-btn>button:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+  }
+ /**********************************/
+
+ /*footer section*/
+ #footer-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(1,1fr);
+    height: auto;
+    background-color: #3f4237;
+    opacity: 0.8;
+ }
+ #footer-element{
+    background: linear-gradient(270deg, #7f846e, #faedcd);
+    background-size: 400% 400%;
+    -webkit-animation: AnimationName 30s ease infinite;
+    -moz-animation: AnimationName 30s ease infinite;
+    -o-animation: AnimationName 30s ease infinite;
+    animation: AnimationName 30s ease infinite;
+}
+ .footer-element{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-bottom: 0.8rem;
+    margin-right: 1.2rem;
+    margin-left: 1.2rem;
+    margin-top: 0;
+    color: #FAEDCD;
+
+ }
+ .footer-element p{
+    color: #FAEDCD;
+ }
+ .address{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+ }
+ .address p{
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem;
+ }
+
+ .address h3{
+    font-size: 2rem;
+    margin-top: 0.5rem;
+    color: #FAEDCD;
+    font-family: 'Dancing Script', cursive;
+    letter-spacing: 0.1rem;
+ }
+ 
+ .copy p{
+    text-align: right;
+    opacity: .2;
+    font-family: 'Raleway', sans-serif;
+ }
+ @media (max-width:992px){
+    #footer-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .down{
+        margin-bottom: 0;
+    }
+ }
+ /**MOBILE DEVICES**/
+@media (max-width:576px){
+    h1{
+        font-size: 2rem;
+    }
+    .deg-list li{
+        font-size: 1.3rem;
+    }
+    .deg-sub-list li{
+        font-size: 0.9rem;
+    }
+    .address p{
+        font-size: 0.8rem;
+    }
+    .copy p{
+        font-size: 0.8rem;
+    }
+    .card h3{
+        font-size: 1.3rem;
+    }
+    .project-list-item h3{
+        font-size: 1.3rem;
+    }
+}
