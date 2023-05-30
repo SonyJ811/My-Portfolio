@@ -147,7 +147,7 @@ p{
 }
 .hero-button:after {
     content: "";
-    background: salmon;
+    background: #7f846e;
     display: block;
     position: absolute;
     padding-top: 300%;
